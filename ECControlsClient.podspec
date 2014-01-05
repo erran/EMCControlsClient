@@ -10,15 +10,15 @@ Pod::Spec.new do |s|
   }
   s.license      = 'MIT'
   s.summary      = 'A short description of ECControlsClient.'
-#  s.description  = <<-DESC
-#                    An optional longer description of ECControlsClient
-#
-#                    * Markdown format.
-#                    * Don't worry about the indent, we strip it!
-#                   DESC
+  s.description  = <<-DESC
+                   ECControlsClient is a Rapid7 **controls**insight API client.
+
+                   **Caveats**:
+                   * Doesn't yet support asset methods
+                   DESC
   s.source       = {
     git: 'https://github.com/ipwnstuff/ECControlsClient.git',
-    tag: s.version
+    tag: s.version.to_s
   }
   s.source_files = 'ECControlsClient'
   s.requires_arc = true
