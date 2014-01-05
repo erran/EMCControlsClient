@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
     'Erran Carey' => 'me@errancarey.com'
   }
   s.license      = 'MIT'
-  s.summary      = 'A short description of ECControlsClient.'
+  s.summary      = 'ECControlsClient is a Rapid7 controlsinsight API client.'
   s.description  = <<-DESC
                    ECControlsClient is a Rapid7 **controls**insight API client.
 
