@@ -1,14 +1,14 @@
 //
-//  ECControlsClient.m
+//  EMCControlsClient.m
 //
 //
 //  Created by Erran Carey on 1/3/14.
 //
 //
 
-#import "ECControlsClient.h"
+#import "EMCControlsClient.h"
 #import "AFHTTPRequestOperation.h"
 
-@implementation ECControlsClient
+@implementation EMCControlsClient
 
 @end

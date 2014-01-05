@@ -1,5 +1,5 @@
 //
-//  ECControlsClient.h
+//  EMCControlsClient.h
 //
 //
 //  Created by Erran Carey on 1/3/14.
@@ -9,9 +9,9 @@
 #import "AFHTTPRequestOperationManager.h"
 
 /**
- ECControlsClient is a AFHTTPRequestOperationManager subclass for interacting with the Rapid7 ControlsInsight API
+ EMCControlsClient is a AFHTTPRequestOperationManager subclass for interacting with the Rapid7 ControlsInsight API
  */
-@interface ECControlsClient : AFHTTPRequestOperationManager
+@interface EMCControlsClient : AFHTTPRequestOperationManager
 
 /**
  The base URL to connect to ControlsInsight's API with.
@@ -19,7 +19,7 @@
 @property (nonatomic, strong) NSURL *baseURL;
 
 /**
- Initializes a ECControlsClient instance with the given credentials.
+ Initializes a EMCControlsClient instance with the given credentials.
 
  @param username The username.
  @param password The password.
