@@ -27,9 +27,9 @@
 - (id)initWithUsername:(NSString *)username
               password:(NSString *)password;
 
-#pragma mark -
-#pragma mark - Configuration methods
-#pragma mark -
+///----------------------
+/// @name Configuration Methods
+///----------------------
 
 - (void)getConfigurationsWithSuccess:(void (^)(AFHTTPRequestOperation *operation, id responseObject))success
                              failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure;
@@ -38,9 +38,9 @@
                  success:(void (^)(AFHTTPRequestOperation *operation, id responseObject))success
                  failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure;
 
-#pragma mark -
-#pragma mark Security Controls methods
-#pragma mark -
+///--------------------------
+/// @name Security Controls Methods
+///--------------------------
 
 - (void)getSecurityControlsWithSuccess:(void (^)(AFHTTPRequestOperation *operation, id responseObject))success
                                failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure;
@@ -61,9 +61,9 @@
                                   success:(void (^)(AFHTTPRequestOperation *operation, id responseObject))success
                                   failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure;
 
-#pragma mark -
-#pragma mark Threat methods
-#pragma mark -
+///---------------
+/// @name Threat Methods
+///---------------
 
 - (void)getThreatsWithSuccess:(void (^)(AFHTTPRequestOperation *operation, id responseObject))success
                       failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure;
@@ -72,9 +72,9 @@
           success:(void (^)(AFHTTPRequestOperation *operation, id responseObject))success
           failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure;
 
-#pragma mark -
-#pragma mark Threat Vector methods
-#pragma mark -
+///----------------------
+/// @name Threat Vector Methods
+///----------------------
 
 - (void)getThreatVectorsWithSuccess:(void (^)(AFHTTPRequestOperation *operation, id responseObject))success
                             failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure;
@@ -83,9 +83,9 @@
                 success:(void (^)(AFHTTPRequestOperation *operation, id responseObject))success
                 failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure;
 
-#pragma mark -
-#pragma mark Guidance methods
-#pragma mark -
+///-----------------
+/// @name Guidance Methods
+///-----------------
 
 - (void)getGuidance:(NSString *)guidance
        success:(void (^)(AFHTTPRequestOperation *operation, id responseObject))success
@@ -95,9 +95,9 @@
                     success:(void (^)(AFHTTPRequestOperation *operation, id responseObject))success
                     failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure;
 
-#pragma mark -
-#pragma mark Prioritized Guidance methods
-#pragma mark -
+///-----------------------------
+/// @name Prioritized Guidance Methods
+///-----------------------------
 
 - (void)getPrioritiedGuidanceByConfiguration:(NSString *)configuration
                                      success:(void (^)(AFHTTPRequestOperation *operation, id responseObject))success
