@@ -1,5 +1,3 @@
-# vi: set ft=ruby :
-
 Pod::Spec.new do |s|
   s.name         = 'ECControlsClient'
   s.version      = '0.1.0'
