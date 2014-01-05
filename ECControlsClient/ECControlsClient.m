@@ -7,6 +7,7 @@
 //
 
 #import "ECControlsClient.h"
+#import "AFHTTPRequestOperation.h"
 
 @implementation ECControlsClient
 

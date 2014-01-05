@@ -6,12 +6,12 @@
 //
 //
 
-#import "AFHTTPClient.h"
+#import "AFHTTPRequestOperationManager.h"
 
 /**
- ECControlsClient is a AFHTTPClient subclass for interacting with the Rapid7 ControlsInsight API
+ ECControlsClient is a AFHTTPRequestOperationManager subclass for interacting with the Rapid7 ControlsInsight API
  */
-@interface ECControlsClient : AFHTTPClient
+@interface ECControlsClient : AFHTTPRequestOperationManager
 
 /**
  The base URL to connect to ControlsInsight's API with.
