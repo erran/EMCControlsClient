@@ -1,2 +1,1 @@
-# [todo] - Use podspec?
-pod 'AFNetworking'
+podspec :path => '../EMCControlsClient.podspec'

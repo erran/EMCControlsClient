@@ -7,8 +7,16 @@
 //
 
 #import "EMCControlsClient.h"
-#import "AFHTTPRequestOperation.h"
 
 @implementation EMCControlsClient
+
+- (id)initWithBaseURL:(NSURL *)baseURL username:(NSString *)username password:(NSString *)password
+{
+    self = [super initWithBaseURL:baseURL];
+    if (self) {
+    }
+
+    return self;
+}
 
 @end
