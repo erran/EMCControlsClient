@@ -16,6 +16,7 @@
 /**
  Initializes a EMCControlsClient instance with the given credentials.
 
+ @param baseURL  The baseURL to connect to controlsinsight with.
  @param username The username.
  @param password The password.
  */
