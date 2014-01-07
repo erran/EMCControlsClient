@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		4B83D0686BC149DFA9DAE4EF /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 60AEE8CA49354110AD874EF8 /* libPods.a */; };
 		BC4AFCBC187A792400F0FF05 /* EMCControlsClient.m in Sources */ = {isa = PBXBuildFile; fileRef = BC4AFCBB187A792400F0FF05 /* EMCControlsClient.m */; };
+		BCA36425187B9CFE0043E506 /* EMCControlsClient+SecurityControls.m in Sources */ = {isa = PBXBuildFile; fileRef = BCA36424187B9CFE0043E506 /* EMCControlsClient+SecurityControls.m */; };
+		BCA36435187BAC430043E506 /* EMCControlsSecurityControl.m in Sources */ = {isa = PBXBuildFile; fileRef = BCA36434187BAC430043E506 /* EMCControlsSecurityControl.m */; };
 		BCB15656187A768C00627617 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCB15655187A768C00627617 /* Foundation.framework */; };
 		BCB15659187A768C00627617 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB15658187A768C00627617 /* main.m */; };
 		BCB1565D187A768C00627617 /* EMCControlsClientDemo.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = BCB1565C187A768C00627617 /* EMCControlsClientDemo.1 */; };
@@ -32,6 +34,10 @@
 		62007E82F6394BF78D34CB63 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		BC4AFCBA187A792400F0FF05 /* EMCControlsClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMCControlsClient.h; sourceTree = "<group>"; };
 		BC4AFCBB187A792400F0FF05 /* EMCControlsClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMCControlsClient.m; sourceTree = "<group>"; };
+		BCA36423187B9CFE0043E506 /* EMCControlsClient+SecurityControls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EMCControlsClient+SecurityControls.h"; sourceTree = "<group>"; };
+		BCA36424187B9CFE0043E506 /* EMCControlsClient+SecurityControls.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EMCControlsClient+SecurityControls.m"; sourceTree = "<group>"; };
+		BCA36433187BAC430043E506 /* EMCControlsSecurityControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMCControlsSecurityControl.h; sourceTree = "<group>"; };
+		BCA36434187BAC430043E506 /* EMCControlsSecurityControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMCControlsSecurityControl.m; sourceTree = "<group>"; };
 		BCB15652187A768C00627617 /* EMCControlsClientDemo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = EMCControlsClientDemo; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCB15655187A768C00627617 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BCB15658187A768C00627617 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -57,9 +63,21 @@
 			children = (
 				BC4AFCBA187A792400F0FF05 /* EMCControlsClient.h */,
 				BC4AFCBB187A792400F0FF05 /* EMCControlsClient.m */,
+				BCA36432187BABBD0043E506 /* Security Controls */,
 			);
 			name = EMCControlsClient;
 			path = ../../EMCControlsClient;
+			sourceTree = "<group>";
+		};
+		BCA36432187BABBD0043E506 /* Security Controls */ = {
+			isa = PBXGroup;
+			children = (
+				BCA36423187B9CFE0043E506 /* EMCControlsClient+SecurityControls.h */,
+				BCA36424187B9CFE0043E506 /* EMCControlsClient+SecurityControls.m */,
+				BCA36433187BAC430043E506 /* EMCControlsSecurityControl.h */,
+				BCA36434187BAC430043E506 /* EMCControlsSecurityControl.m */,
+			);
+			name = "Security Controls";
 			sourceTree = "<group>";
 		};
 		BCB15649187A768C00627617 = {
@@ -194,6 +212,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCA36425187B9CFE0043E506 /* EMCControlsClient+SecurityControls.m in Sources */,
+				BCA36435187BAC430043E506 /* EMCControlsSecurityControl.m in Sources */,
 				BC4AFCBC187A792400F0FF05 /* EMCControlsClient.m in Sources */,
 				BCB15659187A768C00627617 /* main.m in Sources */,
 			);

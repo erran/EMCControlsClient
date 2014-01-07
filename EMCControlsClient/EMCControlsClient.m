@@ -10,10 +10,25 @@
 
 @implementation EMCControlsClient
 
-- (id)initWithBaseURL:(NSURL *)baseURL username:(NSString *)username password:(NSString *)password
+@synthesize username;
+@synthesize password;
+
+//        // To properly connect to ControlsInsight enable self signed certs.:
+//        AFSecurityPolicy *securityPolicy = [[AFSecurityPolicy alloc] init];
+//        [securityPolicy setAllowInvalidCertificates:YES];
+//        [client setSecurityPolicy:securityPolicy];
+
+- (instancetype)initWithBaseURL:(NSURL *)URL username:(NSString *)user password:(NSString *)pass
 {
-    self = [super initWithBaseURL:baseURL];
+    self = [super initWithBaseURL:URL];
+
     if (self) {
+        self.username = user;
+        self.password = pass;
+
+        self.requestSerializer = [AFJSONRequestSerializer serializer];
+        self.responseSerializer = [AFJSONResponseSerializer serializer];
+        [[self requestSerializer] setAuthorizationHeaderFieldWithUsername:user password:pass];
     }
 
     return self;
